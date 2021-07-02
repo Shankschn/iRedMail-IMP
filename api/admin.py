@@ -223,7 +223,7 @@ class IRedAdminUserAdmin(ImportExportModelAdmin):
         if messages_status == 1:
             messages.success(request, msg)
         else:
-            messages.ERROR(request, msg)
+            messages.error(request, msg)
 
     def color_status(self, obj):
         # print(type(obj), obj)
