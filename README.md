@@ -16,3 +16,5 @@ pip install mysqlclient # 若使用 MySql 或 MariaDB 需安装，默认使用 S
 ~~~
 # 使用
 在 iRedAdmin 管理及设置中，配置"域"，"管理员账号"，"管理员密码"，"特殊电子邮箱"等基础信息后，即可使用。
+新版本的 iRedMail，正则可能提取不到 csrf_token。可以尝试直接改正则。
+iRedAdmin 中的用户员工编号必须填写，未填写员工编号的用户不会被刷新到 iRedMail-IMP。
